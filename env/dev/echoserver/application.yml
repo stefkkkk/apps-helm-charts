@@ -9,6 +9,7 @@ spec:
   destination:
     namespace: echoserver
     server: https://kubernetes.default.svc
+  project: default  
   source:
     path: helm-charts/echoserver
     repoURL: git@github.com:stefkkkk/apps-helm-charts.git
