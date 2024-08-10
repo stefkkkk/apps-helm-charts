@@ -5,10 +5,9 @@ metadata:
   finalizers:
   - resources-finalizer.argocd.argoproj.io
   name: echoserver-dev
-  namespace: argocd
 spec:
   destination:
-    namespace: default
+    namespace: echoserver
     server: https://kubernetes.default.svc
   source:
     path: helm-charts/echoserver
