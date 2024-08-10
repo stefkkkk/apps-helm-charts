@@ -8,6 +8,7 @@ metadata:
 spec:
   destination:
     server: https://kubernetes.default.svc
+    namespace: echoserver-dev
   project: default  
   source:
     helm:
