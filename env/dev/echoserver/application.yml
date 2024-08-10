@@ -10,6 +10,9 @@ spec:
     server: https://kubernetes.default.svc
   project: default  
   source:
+    helm:
+      valueFiles:
+        - values.yaml
     path: helm-charts/echoserver
     repoURL: git@github.com:stefkkkk/apps-helm-charts.git
     targetRevision: main
