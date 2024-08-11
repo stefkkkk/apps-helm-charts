@@ -15,6 +15,7 @@ spec:
     helm:
       valueFiles:
         - values.yaml
+      releaseName: echoserver-dev
     path: helm-charts/echoserver
     repoURL: git@github.com:stefkkkk/apps-helm-charts.git
     targetRevision: main
