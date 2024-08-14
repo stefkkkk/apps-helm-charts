@@ -1,5 +1,5 @@
 apiVersion: v2
-name: {{ .Release.Name }}
+name: "{{ .Release.Name }}"
 description: A generic chart for Kubernetes apps
 
 # A chart can be either an 'application' or a 'library' chart.
