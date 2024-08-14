@@ -11,8 +11,8 @@ image:
   tag: 1.27
 
 imagePullSecrets: []
-nameOverride: "nginx"
-fullnameOverride: "nginx"
+nameOverride: "nginx-2"
+fullnameOverride: "nginx-2"
 
 serviceAccount:
   # Specifies whether a service account should be created
