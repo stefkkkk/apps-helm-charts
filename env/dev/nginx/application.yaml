@@ -14,7 +14,7 @@ spec:
   source:
     helm:
       valueFiles:
-        - ../../../env/dev/nginx/values.yaml
+        - ../../env/dev/nginx/values.yaml
       releaseName: nginx
     path: helm-charts/generic
     repoURL: git@github.com:stefkkkk/apps-helm-charts.git
