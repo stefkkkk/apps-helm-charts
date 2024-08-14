@@ -4,18 +4,19 @@ kind: Application
 metadata:
   finalizers:
   - resources-finalizer.argocd.argoproj.io
-  name: echoserver-dev
+  name: nginx
   namespace: argocd
 spec:
   destination:
     server: https://kubernetes.default.svc
-    namespace: echoserver-dev
+    namespace: nginx
   project: default
   source:
     helm:
       valueFiles:
-        - values.yaml
-    path: helm-charts/echoserver
+        - env/dev/nginx/values.yaml
+      releaseName: nginx
+    path: helm-charts/generic
     repoURL: git@github.com:stefkkkk/apps-helm-charts.git
     targetRevision: main
   syncPolicy:
